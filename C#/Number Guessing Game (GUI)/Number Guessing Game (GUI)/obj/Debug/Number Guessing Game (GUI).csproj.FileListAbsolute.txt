@@ -8,3 +8,13 @@ D:\Code\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Numbe
 D:\Code\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csproj.CoreCompileInputs.cache
 D:\Code\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).exe
 D:\Code\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).pdb
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\bin\Debug\Number Guessing Game (GUI).exe.config
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\bin\Debug\Number Guessing Game (GUI).exe
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\bin\Debug\Number Guessing Game (GUI).pdb
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csprojAssemblyReference.cache
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.gui.resources
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number_Guessing_Game__GUI_.Properties.Resources.resources
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csproj.GenerateResource.cache
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csproj.CoreCompileInputs.cache
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).exe
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).pdb

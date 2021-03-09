@@ -22,7 +22,17 @@ namespace NGG_GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thanks!");
+            MessageBox.Show("Albo du bist ein Hund!");
+        }
+
+        private void helloWorldLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void debugInstructionsLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

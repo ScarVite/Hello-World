@@ -11,10 +11,10 @@ namespace NGG_GUI
         [STAThread]
         static void Main()
         {
-            Console.Write("Lol");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new gui());
+
         }
     }
 }
