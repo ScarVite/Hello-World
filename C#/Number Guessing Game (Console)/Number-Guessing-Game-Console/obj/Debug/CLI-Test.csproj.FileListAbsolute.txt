@@ -1,0 +1,7 @@
+D:\Code\C# Test\Test-CLI\Test-CLI\bin\Debug\Test-CLI.exe.config
+D:\Code\C# Test\Test-CLI\Test-CLI\bin\Debug\Test-CLI.exe
+D:\Code\C# Test\Test-CLI\Test-CLI\bin\Debug\Test-CLI.pdb
+D:\Code\C# Test\Test-CLI\Test-CLI\obj\Debug\CLI-Test.csproj.CoreCompileInputs.cache
+D:\Code\C# Test\Test-CLI\Test-CLI\obj\Debug\Test-CLI.exe
+D:\Code\C# Test\Test-CLI\Test-CLI\obj\Debug\Test-CLI.pdb
+D:\Code\C# Test\Test-CLI\Test-CLI\obj\Debug\CLI-Test.csprojAssemblyReference.cache
