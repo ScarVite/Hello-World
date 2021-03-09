@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test_CLI
+namespace NGG_CLI
 {
     class main
     {
@@ -46,7 +46,7 @@ namespace Test_CLI
                             Console.WriteLine("Blaze it");
                             break;
                         case 42:
-                            Console.WriteLine("The Answer to the Universe and Everything");
+                            Console.WriteLine("The Answer to the Universe123456ything");
                             break;
                         case 69:
                             Console.WriteLine("Nice");
