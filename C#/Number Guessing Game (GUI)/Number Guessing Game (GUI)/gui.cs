@@ -56,12 +56,31 @@ namespace NGG_GUI
 
         public void RemoveText(object sender, EventArgs e)
         {
-            if (this.guess.Text == "Please A Number Between 1-100") this.guess.Text = "";
+            if (!int.TryParse(this.guess.Text, out _)) this.guess.Text = "";
         }
 
         public void AddText(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(this.guess.Text)) this.guess.Text = "Please A Number Between 1-100";
+            if (string.IsNullOrWhiteSpace(this.guess.Text))
+            {
+                switch (this.DifficultyBox.Items[this.DifficultyBox.SelectedIndex].ToString())
+                {
+                    case "Easy":
+                        this.guess.Text = "Please Enter a Number between 1-10";
+                        break;
+                    case "Middle":
+                        this.guess.Text = "Please Enter a Number between 1-100";
+                        break;
+                    case "Hard":
+                        this.guess.Text = "Please Enter a Number between 1-1000";
+                        break;
+                    case "Impossible":
+                        this.guess.Text = "Please Enter a Number between 1 and a Random Number";
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
 
         public static void AppendLine(TextBox source, string value)

@@ -39,10 +39,9 @@ namespace NGG_GUI
             // 
             // compBt
             // 
-            this.compBt.Location = new System.Drawing.Point(207, 469);
-            this.compBt.Margin = new System.Windows.Forms.Padding(4);
+            this.compBt.Location = new System.Drawing.Point(155, 381);
             this.compBt.Name = "compBt";
-            this.compBt.Size = new System.Drawing.Size(261, 60);
+            this.compBt.Size = new System.Drawing.Size(196, 49);
             this.compBt.TabIndex = 0;
             this.compBt.Text = "Compare";
             this.compBt.UseVisualStyleBackColor = true;
@@ -51,10 +50,9 @@ namespace NGG_GUI
             // guess
             // 
             this.guess.HideSelection = false;
-            this.guess.Location = new System.Drawing.Point(85, 395);
-            this.guess.Margin = new System.Windows.Forms.Padding(4);
+            this.guess.Location = new System.Drawing.Point(64, 321);
             this.guess.Name = "guess";
-            this.guess.Size = new System.Drawing.Size(362, 22);
+            this.guess.Size = new System.Drawing.Size(306, 20);
             this.guess.TabIndex = 1;
             this.guess.Text = "Please A Number Between 1-100";
             this.guess.GotFocus += new System.EventHandler(this.RemoveText);
@@ -63,39 +61,37 @@ namespace NGG_GUI
             // 
             // lastNumbers
             // 
-            this.lastNumbers.Location = new System.Drawing.Point(13, 73);
-            this.lastNumbers.Margin = new System.Windows.Forms.Padding(4);
+            this.lastNumbers.Location = new System.Drawing.Point(10, 59);
             this.lastNumbers.Multiline = true;
             this.lastNumbers.Name = "lastNumbers";
             this.lastNumbers.ReadOnly = true;
-            this.lastNumbers.Size = new System.Drawing.Size(479, 237);
+            this.lastNumbers.Size = new System.Drawing.Size(360, 193);
             this.lastNumbers.TabIndex = 2;
             // 
             // LastNumLabel
             // 
             this.LastNumLabel.AutoSize = true;
-            this.LastNumLabel.Location = new System.Drawing.Point(13, 52);
-            this.LastNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LastNumLabel.Location = new System.Drawing.Point(10, 42);
             this.LastNumLabel.Name = "LastNumLabel";
-            this.LastNumLabel.Size = new System.Drawing.Size(100, 17);
+            this.LastNumLabel.Size = new System.Drawing.Size(75, 13);
             this.LastNumLabel.TabIndex = 3;
             this.LastNumLabel.Text = "Last Numbers:";
             // 
             // GuessLab
             // 
             this.GuessLab.AutoSize = true;
-            this.GuessLab.Location = new System.Drawing.Point(82, 374);
-            this.GuessLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GuessLab.Location = new System.Drawing.Point(62, 304);
             this.GuessLab.Name = "GuessLab";
-            this.GuessLab.Size = new System.Drawing.Size(87, 17);
+            this.GuessLab.Size = new System.Drawing.Size(65, 13);
             this.GuessLab.TabIndex = 4;
             this.GuessLab.Text = "Your Guess:";
             // 
             // numpadBtn
             // 
-            this.numpadBtn.Location = new System.Drawing.Point(564, 374);
+            this.numpadBtn.Location = new System.Drawing.Point(423, 304);
+            this.numpadBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numpadBtn.Name = "numpadBtn";
-            this.numpadBtn.Size = new System.Drawing.Size(75, 72);
+            this.numpadBtn.Size = new System.Drawing.Size(56, 58);
             this.numpadBtn.TabIndex = 5;
             this.numpadBtn.Text = "Open  Numpad";
             this.numpadBtn.UseVisualStyleBackColor = true;
@@ -110,18 +106,20 @@ namespace NGG_GUI
             "Middle",
             "Hard",
             "Impossible"});
-            this.DifficultyBox.Location = new System.Drawing.Point(519, 76);
+            this.DifficultyBox.Location = new System.Drawing.Point(389, 62);
+            this.DifficultyBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DifficultyBox.MultiColumn = true;
             this.DifficultyBox.Name = "DifficultyBox";
-            this.DifficultyBox.Size = new System.Drawing.Size(120, 89);
+            this.DifficultyBox.SetItemChecked(1, true);
+            this.DifficultyBox.Size = new System.Drawing.Size(91, 64);
             this.DifficultyBox.TabIndex = 6;
             this.DifficultyBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DifficultyBox_ItemCheck);
             // 
             // gui
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 630);
+            this.ClientSize = new System.Drawing.Size(512, 512);
             this.Controls.Add(this.DifficultyBox);
             this.Controls.Add(this.numpadBtn);
             this.Controls.Add(this.GuessLab);
@@ -129,7 +127,7 @@ namespace NGG_GUI
             this.Controls.Add(this.lastNumbers);
             this.Controls.Add(this.guess);
             this.Controls.Add(this.compBt);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "gui";
