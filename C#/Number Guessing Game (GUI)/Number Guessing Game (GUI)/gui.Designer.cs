@@ -37,9 +37,10 @@ namespace NGG_GUI
             // 
             // compBt
             // 
-            this.compBt.Location = new System.Drawing.Point(155, 381);
+            this.compBt.Location = new System.Drawing.Point(207, 469);
+            this.compBt.Margin = new System.Windows.Forms.Padding(4);
             this.compBt.Name = "compBt";
-            this.compBt.Size = new System.Drawing.Size(196, 49);
+            this.compBt.Size = new System.Drawing.Size(261, 60);
             this.compBt.TabIndex = 0;
             this.compBt.Text = "Compare";
             this.compBt.UseVisualStyleBackColor = true;
@@ -48,55 +49,59 @@ namespace NGG_GUI
             // guess
             // 
             this.guess.HideSelection = false;
-            this.guess.Location = new System.Drawing.Point(155, 327);
+            this.guess.Location = new System.Drawing.Point(207, 402);
+            this.guess.Margin = new System.Windows.Forms.Padding(4);
             this.guess.Name = "guess";
-            this.guess.Size = new System.Drawing.Size(196, 20);
+            this.guess.Size = new System.Drawing.Size(260, 22);
             this.guess.TabIndex = 1;
             this.guess.Text = "Please A Number Between 1-100";
             this.guess.GotFocus += new System.EventHandler(this.RemoveText);
+            this.guess.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guess_KeyDown);
             this.guess.LostFocus += new System.EventHandler(this.AddText);
             // 
             // lastNumbers
             // 
-            this.lastNumbers.Location = new System.Drawing.Point(55, 58);
+            this.lastNumbers.Location = new System.Drawing.Point(73, 71);
+            this.lastNumbers.Margin = new System.Windows.Forms.Padding(4);
             this.lastNumbers.Multiline = true;
             this.lastNumbers.Name = "lastNumbers";
             this.lastNumbers.ReadOnly = true;
-            this.lastNumbers.Size = new System.Drawing.Size(360, 193);
+            this.lastNumbers.Size = new System.Drawing.Size(479, 237);
             this.lastNumbers.TabIndex = 2;
             // 
             // LastNumLabel
             // 
             this.LastNumLabel.AutoSize = true;
-            this.LastNumLabel.Location = new System.Drawing.Point(52, 42);
+            this.LastNumLabel.Location = new System.Drawing.Point(69, 52);
+            this.LastNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LastNumLabel.Name = "LastNumLabel";
-            this.LastNumLabel.Size = new System.Drawing.Size(75, 13);
+            this.LastNumLabel.Size = new System.Drawing.Size(100, 17);
             this.LastNumLabel.TabIndex = 3;
             this.LastNumLabel.Text = "Last Numbers:";
             // 
             // GuessLab
             // 
             this.GuessLab.AutoSize = true;
-            this.GuessLab.Location = new System.Drawing.Point(152, 311);
+            this.GuessLab.Location = new System.Drawing.Point(82, 374);
+            this.GuessLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.GuessLab.Name = "GuessLab";
-            this.GuessLab.Size = new System.Drawing.Size(65, 13);
+            this.GuessLab.Size = new System.Drawing.Size(87, 17);
             this.GuessLab.TabIndex = 4;
             this.GuessLab.Text = "Your Guess:";
             // 
             // gui
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 512);
+            this.ClientSize = new System.Drawing.Size(683, 630);
             this.Controls.Add(this.GuessLab);
             this.Controls.Add(this.LastNumLabel);
             this.Controls.Add(this.lastNumbers);
             this.Controls.Add(this.guess);
             this.Controls.Add(this.compBt);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.FormBorderStyle = FormBorderStyle.FixedDialog; // TODO: Das geht noch nicht so ganz
-            this.MinimizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "gui";
             this.Text = "Number Guessing Game GUI";
             this.ResumeLayout(false);

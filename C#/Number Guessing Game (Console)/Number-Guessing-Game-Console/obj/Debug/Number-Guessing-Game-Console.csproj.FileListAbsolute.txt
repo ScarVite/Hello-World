@@ -9,3 +9,14 @@ D:\Code\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug
 D:\Code\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.application
 D:\Code\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.exe
 D:\Code\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.pdb
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\bin\Debug\Test-CLI.exe.config
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\bin\Debug\Test-CLI.exe.manifest
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\bin\Debug\Test-CLI.application
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\bin\Debug\Test-CLI.exe
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\bin\Debug\Test-CLI.pdb
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Number-Guessing-Game-Console.csprojAssemblyReference.cache
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Number-Guessing-Game-Console.csproj.CoreCompileInputs.cache
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.exe.manifest
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.application
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.exe
+D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.pdb
