@@ -27,7 +27,24 @@ namespace NGG_GUI
                 MessageBox.Show(this.DifficultyBox.CheckedItems[0].ToString());
                 if (isNumber)
                 {
-                    int rand = new Random().Next(0, 100);
+                    int rand = -1;
+                    switch (this.DifficultyBox.CheckedItems[0])
+                    {
+                        case "Easy":
+                            rand = new Random().Next(0, 10);
+                            break;
+                        case "Middle":
+                            rand = new Random().Next(0, 100);
+                            break;
+                        case "Hard":
+                            rand = new Random().Next(0, 1000);
+                            break;
+                        case "Impossible":
+                            rand = new Random().Next(0, new Random().Next(0, 99999));
+                            break;
+                        default:
+                            break;
+                    }
                     if (inp > 100) MessageBox.Show("Your Number was too high, please Select One between 0 and 100", "Number Too Large");
                     else if (inp < 0) MessageBox.Show("Your Number was too low, please Select One between 0 and 100", "Number Too Small");
                     else if (inp == rand) AppendLine(this.lastNumbers, "You've Enterred the Correct Number, Congratulations");
@@ -60,11 +77,43 @@ namespace NGG_GUI
 
         private void numpadBtn_Click(object sender, EventArgs e)
         {
-            if(Numpad == null) Application.Run(new numpad());
+            if (Numpad == null)
+            {
+                Numpad = new numpad();
+                Numpad.Show();
+            }
             else
             {
                 Numpad.Dispose();
                 Numpad = null;
+            }
+        }
+
+        private void DifficultyBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            bool allChecked = true;
+            for (int i = 0; i < this.DifficultyBox.Items.Count; i++)
+            {
+                if (i != e.Index) this.DifficultyBox.SetItemChecked(i, false);
+                if (this.DifficultyBox.GetItemChecked(i)) allChecked = false;
+            }
+            if (e.NewValue.ToString() == "Unchecked" && allChecked) this.DifficultyBox.SetItemChecked(0, true);
+            switch(this.DifficultyBox.Items[e.Index].ToString())
+            {
+                case "Easy":
+                    this.guess.Text = "Please Enter a Number between 1-10";
+                    break;
+                case "Middle":
+                    this.guess.Text = "Please Enter a Number between 1-100";
+                    break;
+                case "Hard":
+                    this.guess.Text = "Please Enter a Number between 1-1000";
+                    break;
+                case "Impossible":
+                    this.guess.Text = "Please Enter a Number between 1 and a Random Number";
+                    break;
+                default:
+                    break;
             }
         }
     }

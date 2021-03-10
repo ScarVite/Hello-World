@@ -51,10 +51,10 @@ namespace NGG_GUI
             // guess
             // 
             this.guess.HideSelection = false;
-            this.guess.Location = new System.Drawing.Point(73, 395);
+            this.guess.Location = new System.Drawing.Point(85, 395);
             this.guess.Margin = new System.Windows.Forms.Padding(4);
             this.guess.Name = "guess";
-            this.guess.Size = new System.Drawing.Size(260, 22);
+            this.guess.Size = new System.Drawing.Size(362, 22);
             this.guess.TabIndex = 1;
             this.guess.Text = "Please A Number Between 1-100";
             this.guess.GotFocus += new System.EventHandler(this.RemoveText);
@@ -115,6 +115,7 @@ namespace NGG_GUI
             this.DifficultyBox.Name = "DifficultyBox";
             this.DifficultyBox.Size = new System.Drawing.Size(120, 89);
             this.DifficultyBox.TabIndex = 6;
+            this.DifficultyBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DifficultyBox_ItemCheck);
             // 
             // gui
             // 
