@@ -33,6 +33,8 @@ namespace NGG_GUI
             this.lastNumbers = new System.Windows.Forms.TextBox();
             this.LastNumLabel = new System.Windows.Forms.Label();
             this.GuessLab = new System.Windows.Forms.Label();
+            this.numpadBtn = new System.Windows.Forms.Button();
+            this.DifficultyBox = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // compBt
@@ -49,7 +51,7 @@ namespace NGG_GUI
             // guess
             // 
             this.guess.HideSelection = false;
-            this.guess.Location = new System.Drawing.Point(207, 402);
+            this.guess.Location = new System.Drawing.Point(73, 395);
             this.guess.Margin = new System.Windows.Forms.Padding(4);
             this.guess.Name = "guess";
             this.guess.Size = new System.Drawing.Size(260, 22);
@@ -61,7 +63,7 @@ namespace NGG_GUI
             // 
             // lastNumbers
             // 
-            this.lastNumbers.Location = new System.Drawing.Point(73, 71);
+            this.lastNumbers.Location = new System.Drawing.Point(13, 73);
             this.lastNumbers.Margin = new System.Windows.Forms.Padding(4);
             this.lastNumbers.Multiline = true;
             this.lastNumbers.Name = "lastNumbers";
@@ -72,7 +74,7 @@ namespace NGG_GUI
             // LastNumLabel
             // 
             this.LastNumLabel.AutoSize = true;
-            this.LastNumLabel.Location = new System.Drawing.Point(69, 52);
+            this.LastNumLabel.Location = new System.Drawing.Point(13, 52);
             this.LastNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LastNumLabel.Name = "LastNumLabel";
             this.LastNumLabel.Size = new System.Drawing.Size(100, 17);
@@ -89,11 +91,38 @@ namespace NGG_GUI
             this.GuessLab.TabIndex = 4;
             this.GuessLab.Text = "Your Guess:";
             // 
+            // numpadBtn
+            // 
+            this.numpadBtn.Location = new System.Drawing.Point(564, 374);
+            this.numpadBtn.Name = "numpadBtn";
+            this.numpadBtn.Size = new System.Drawing.Size(75, 72);
+            this.numpadBtn.TabIndex = 5;
+            this.numpadBtn.Text = "Open  Numpad";
+            this.numpadBtn.UseVisualStyleBackColor = true;
+            this.numpadBtn.Click += new System.EventHandler(this.numpadBtn_Click);
+            // 
+            // DifficultyBox
+            // 
+            this.DifficultyBox.CheckOnClick = true;
+            this.DifficultyBox.FormattingEnabled = true;
+            this.DifficultyBox.Items.AddRange(new object[] {
+            "Easy",
+            "Middle",
+            "Hard",
+            "Impossible"});
+            this.DifficultyBox.Location = new System.Drawing.Point(519, 76);
+            this.DifficultyBox.MultiColumn = true;
+            this.DifficultyBox.Name = "DifficultyBox";
+            this.DifficultyBox.Size = new System.Drawing.Size(120, 89);
+            this.DifficultyBox.TabIndex = 6;
+            // 
             // gui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 630);
+            this.Controls.Add(this.DifficultyBox);
+            this.Controls.Add(this.numpadBtn);
             this.Controls.Add(this.GuessLab);
             this.Controls.Add(this.LastNumLabel);
             this.Controls.Add(this.lastNumbers);
@@ -116,6 +145,8 @@ namespace NGG_GUI
         private System.Windows.Forms.TextBox lastNumbers;
         private System.Windows.Forms.Label LastNumLabel;
         private System.Windows.Forms.Label GuessLab;
+        private System.Windows.Forms.Button numpadBtn;
+        private System.Windows.Forms.CheckedListBox DifficultyBox;
     }
 }
 

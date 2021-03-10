@@ -18,3 +18,4 @@ D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj
 D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csproj.CoreCompileInputs.cache
 D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).exe
 D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).pdb
+D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number_Guessing_Game__GUI_.numpad.resources
