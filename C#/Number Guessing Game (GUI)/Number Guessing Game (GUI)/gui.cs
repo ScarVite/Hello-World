@@ -110,30 +110,31 @@ namespace NGG_GUI
 
         private void DifficultyBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            bool allChecked = true;
+            MessageBox.Show(e.NewValue.ToString());
             for (int i = 0; i < this.DifficultyBox.Items.Count; i++)
             {
                 if (i != e.Index) this.DifficultyBox.SetItemChecked(i, false);
-                if (this.DifficultyBox.GetItemChecked(i)) allChecked = false;
             }
-            if (e.NewValue.ToString() == "Unchecked" && allChecked) this.DifficultyBox.SetItemChecked(0, true);
+            //if (e.NewValue.ToString() == "Unchecked" && this.DifficultyBox.GetItemChecked(e.Index)) this.DifficultyBox.SetItemChecked(0, true);
+            String text = "Something went wrong";
             switch(this.DifficultyBox.Items[e.Index].ToString())
             {
                 case "Easy":
-                    this.guess.Text = "Please Enter a Number between 1-10";
+                    text = "Please Enter a Number between 1-10";
                     break;
                 case "Middle":
-                    this.guess.Text = "Please Enter a Number between 1-100";
+                    text = "Please Enter a Number between 1-100";
                     break;
                 case "Hard":
-                    this.guess.Text = "Please Enter a Number between 1-1000";
+                    text = "Please Enter a Number between 1-1000";
                     break;
                 case "Impossible":
-                    this.guess.Text = "Please Enter a Number between 1 and a Random Number";
+                    text = "Please Enter a Number between 1 and a Random Number";
                     break;
                 default:
                     break;
             }
+            this.guess.Text = text;
         }
     }
 }
