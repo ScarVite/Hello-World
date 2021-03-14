@@ -1,6 +1,6 @@
 using System;
 using System.Windows.Forms;
-using Number_Guessing_Game__GUI_;
+using System.Drawing;
 
 // This is the code for your desktop app.
 // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
@@ -9,44 +9,50 @@ namespace NGG_GUI
 {
     public partial class gui : Form
     {
-
-        numpad Numpad = null;
+        numpad Numpad = null;   
 
         public gui()
-        {
+        {  
             InitializeComponent();
+            this.DifficultyBox.SetItemChecked(1, true);
         }
 
         private void compare(object sender, EventArgs e)
         {
-            if (this.DifficultyBox.CheckedItems.Count > 1) MessageBox.Show("Please Select Only One Difficulty", "Too Many Error");
+            if (this.DifficultyBox.CheckedItems.Count > 1) MessageBox.Show("Please Select Only One Difficulty", "Many Exception");
+            if (this.DifficultyBox.CheckedItems.Count == 0) MessageBox.Show("No Difficulty Selected, Game cannot be Started", "No Exception");
             else
             {
                 string input = this.guess.Text;
                 bool isNumber = int.TryParse(input, out int inp);
-                MessageBox.Show(this.DifficultyBox.CheckedItems[0].ToString());
                 if (isNumber)
                 {
-                    int rand = -1;
+                    int rand = -6606;
+                    int max = 100;
                     switch (this.DifficultyBox.CheckedItems[0])
                     {
                         case "Easy":
-                            rand = new Random().Next(0, 10);
+                            rand = new Random().Next(0, 11);
+                            max = 10;
                             break;
                         case "Middle":
-                            rand = new Random().Next(0, 100);
+                            rand = new Random().Next(0, 101);
+                            max = 100;
                             break;
                         case "Hard":
-                            rand = new Random().Next(0, 1000);
+                            rand = new Random().Next(0, 1001);
+                            max = 1000;
                             break;
                         case "Impossible":
                             rand = new Random().Next(0, new Random().Next(0, 99999));
+                            max = 99999;
                             break;
                         default:
                             break;
                     }
-                    if (inp > 100) MessageBox.Show("Your Number was too high, please Select One between 0 and 100", "Number Too Large");
-                    else if (inp < 0) MessageBox.Show("Your Number was too low, please Select One between 0 and 100", "Number Too Small");
+                    if (inp > max) MessageBox.Show("Your Number is too high", "Too Large Exception");
+                    else if (inp == -6606) MessageBox.Show("Either You've Guessed luckily or Something went extremly Wrong", "Weird Exception");
+                    else if (inp < 0) MessageBox.Show("Your Number is too low", "Too Small Exception");
                     else if (inp == rand) AppendLine(this.lastNumbers, "You've Enterred the Correct Number, Congratulations");
                     else AppendLine(this.lastNumbers, "You've guessed wrong, the Number was: " + Convert.ToString(rand));
                 }
@@ -91,15 +97,16 @@ namespace NGG_GUI
 
         private void guess_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter) compare(null, null);
+            if (e.KeyCode == Keys.Enter) compare(null, null);
         }
 
         private void numpadBtn_Click(object sender, EventArgs e)
         {
             if (Numpad == null)
             {
-                Numpad = new numpad();
+                Numpad = new numpad(this);
                 Numpad.Show();
+                Numpad.Location = new Point(this.Left + this.Width, this.Top);
             }
             else
             {
@@ -110,14 +117,11 @@ namespace NGG_GUI
 
         private void DifficultyBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            bool allChecked = true;
             for (int i = 0; i < this.DifficultyBox.Items.Count; i++)
             {
                 if (i != e.Index) this.DifficultyBox.SetItemChecked(i, false);
-                if (this.DifficultyBox.GetItemChecked(i)) allChecked = false;
             }
-            if (e.NewValue.ToString() == "Unchecked" && allChecked) this.DifficultyBox.SetItemChecked(0, true);
-            switch(this.DifficultyBox.Items[e.Index].ToString())
+            switch (this.DifficultyBox.Items[e.Index].ToString())
             {
                 case "Easy":
                     this.guess.Text = "Please Enter a Number between 1-10";
@@ -134,6 +138,18 @@ namespace NGG_GUI
                 default:
                     break;
             }
+        }
+
+        public void addGuess(String guess)
+        {
+            this.RemoveText(null, null);
+            this.guess.Text += guess;
+        }
+
+        public void delChar()
+        {
+            if (this.guess.Text.Length > 0) this.guess.Text = this.guess.Text.Remove(this.guess.Text.Length - 1);
+            else this.AddText(null, null);
         }
     }
 }

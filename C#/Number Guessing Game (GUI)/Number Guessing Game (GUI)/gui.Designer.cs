@@ -88,8 +88,8 @@ namespace NGG_GUI
             // 
             // numpadBtn
             // 
-            this.numpadBtn.Location = new System.Drawing.Point(423, 304);
-            this.numpadBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numpadBtn.Location = new System.Drawing.Point(410, 177);
+            this.numpadBtn.Margin = new System.Windows.Forms.Padding(2);
             this.numpadBtn.Name = "numpadBtn";
             this.numpadBtn.Size = new System.Drawing.Size(56, 58);
             this.numpadBtn.TabIndex = 5;
@@ -107,10 +107,9 @@ namespace NGG_GUI
             "Hard",
             "Impossible"});
             this.DifficultyBox.Location = new System.Drawing.Point(389, 62);
-            this.DifficultyBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DifficultyBox.Margin = new System.Windows.Forms.Padding(2);
             this.DifficultyBox.MultiColumn = true;
             this.DifficultyBox.Name = "DifficultyBox";
-            this.DifficultyBox.SetItemChecked(1, true);
             this.DifficultyBox.Size = new System.Drawing.Size(91, 64);
             this.DifficultyBox.TabIndex = 6;
             this.DifficultyBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.DifficultyBox_ItemCheck);
@@ -127,7 +126,7 @@ namespace NGG_GUI
             this.Controls.Add(this.lastNumbers);
             this.Controls.Add(this.guess);
             this.Controls.Add(this.compBt);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "gui";
