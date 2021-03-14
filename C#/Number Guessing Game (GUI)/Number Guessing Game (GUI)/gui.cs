@@ -124,20 +124,21 @@ namespace NGG_GUI
             switch (this.DifficultyBox.Items[e.Index].ToString())
             {
                 case "Easy":
-                    this.guess.Text = "Please Enter a Number between 1-10";
+                    text = "Please Enter a Number between 1-10";
                     break;
                 case "Middle":
-                    this.guess.Text = "Please Enter a Number between 1-100";
+                    text = "Please Enter a Number between 1-100";
                     break;
                 case "Hard":
-                    this.guess.Text = "Please Enter a Number between 1-1000";
+                    text = "Please Enter a Number between 1-1000";
                     break;
                 case "Impossible":
-                    this.guess.Text = "Please Enter a Number between 1 and a Random Number";
+                    text = "Please Enter a Number between 1 and a Random Number";
                     break;
                 default:
                     break;
             }
+            this.guess.Text = text;
         }
 
         public void addGuess(String guess)
