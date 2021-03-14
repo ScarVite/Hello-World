@@ -27,31 +27,10 @@ namespace NGG_GUI
                 bool isNumber = int.TryParse(input, out int inp);
                 if (isNumber)
                 {
-                    int rand = -6606;
-                    int max = 100;
-                    switch (this.DifficultyBox.CheckedItems[0])
-                    {
-                        case "Easy":
-                            rand = new Random().Next(0, 11);
-                            max = 10;
-                            break;
-                        case "Middle":
-                            rand = new Random().Next(0, 101);
-                            max = 100;
-                            break;
-                        case "Hard":
-                            rand = new Random().Next(0, 1001);
-                            max = 1000;
-                            break;
-                        case "Impossible":
-                            rand = new Random().Next(0, new Random().Next(0, 99999));
-                            max = 99999;
-                            break;
-                        default:
-                            break;
-                    }
+                    String CheckedItem = this.DifficultyBox.CheckedItems[0] as String;
+                    int rand = new Random().Next(0, CheckedItem == "Easy" ? 11 : CheckedItem == "Middle" ? 101 : CheckedItem == "Hard" ? 1001 : 100000);
+                    int max = CheckedItem == "Easy" ? 10 : CheckedItem == "Middle" ? 100 : CheckedItem == "Hard" ? 1000 : 99999;
                     if (inp > max) MessageBox.Show("Your Number is too high", "Too Large Exception");
-                    else if (inp == -6606) MessageBox.Show("Either You've Guessed luckily or Something went extremly Wrong", "Weird Exception");
                     else if (inp < 0) MessageBox.Show("Your Number is too low", "Too Small Exception");
                     else if (inp == rand) AppendLine(this.lastNumbers, "You've Enterred the Correct Number, Congratulations");
                     else AppendLine(this.lastNumbers, "You've guessed wrong, the Number was: " + Convert.ToString(rand));
@@ -106,11 +85,13 @@ namespace NGG_GUI
             {
                 Numpad = new numpad(this);
                 Numpad.Show();
+                this.numpadBtn.Text = "Close Numpad";
                 Numpad.Location = new Point(this.Left + this.Width, this.Top);
             }
             else
             {
                 Numpad.Dispose();
+                this.numpadBtn.Text = "Open Numpad";
                 Numpad = null;
             }
         }
@@ -121,6 +102,7 @@ namespace NGG_GUI
             {
                 if (i != e.Index) this.DifficultyBox.SetItemChecked(i, false);
             }
+            String text = "";
             switch (this.DifficultyBox.Items[e.Index].ToString())
             {
                 case "Easy":
