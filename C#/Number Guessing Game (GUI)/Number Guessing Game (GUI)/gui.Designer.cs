@@ -28,6 +28,7 @@ namespace NGG_GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gui));
             this.compBt = new System.Windows.Forms.Button();
             this.guess = new System.Windows.Forms.TextBox();
             this.lastNumbers = new System.Windows.Forms.TextBox();
@@ -126,6 +127,7 @@ namespace NGG_GUI
             this.Controls.Add(this.lastNumbers);
             this.Controls.Add(this.guess);
             this.Controls.Add(this.compBt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

@@ -17,7 +17,7 @@ namespace NGG_GUI
             this.DifficultyBox.SetItemChecked(1, true);
         }
 
-        private void compare(object sender, EventArgs e)
+        public void compare(object sender, EventArgs e)
         {
             if (this.DifficultyBox.CheckedItems.Count > 1) MessageBox.Show("Please Select Only One Difficulty", "Many Exception");
             if (this.DifficultyBox.CheckedItems.Count == 0) MessageBox.Show("No Difficulty Selected, Game cannot be Started", "No Exception");
@@ -46,7 +46,7 @@ namespace NGG_GUI
 
         public void AddText(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(this.guess.Text))
+            if (string.IsNullOrWhiteSpace(this.guess.Text) && this.DifficultyBox.SelectedIndex >= 0)
             {
                 switch (this.DifficultyBox.Items[this.DifficultyBox.SelectedIndex].ToString())
                 {

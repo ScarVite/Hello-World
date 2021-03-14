@@ -13,6 +13,7 @@ namespace NGG_GUI
     public partial class numpad : Form
     {
         private gui Gui;
+
         public numpad(gui gui)
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace NGG_GUI
         {
             Button numpadBtn = sender as Button;
             if (numpadBtn.Text.Equals("DEL")) Gui.delChar();
-            else if (numpadBtn.Text.Equals("Ka")) Gui.delChar(); // Dummy Call, will need to changed to something usefull
+            else if (numpadBtn.Text.Equals("Send")) Gui.compare(null, null);
             else Gui.addGuess(numpadBtn.Text);
         }
     }

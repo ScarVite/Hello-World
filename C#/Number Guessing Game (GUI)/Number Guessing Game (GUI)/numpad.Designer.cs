@@ -29,6 +29,7 @@ namespace NGG_GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(numpad));
             this.NumpadOne = new System.Windows.Forms.Button();
             this.NumpadTwo = new System.Windows.Forms.Button();
             this.NumpadThree = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@ namespace NGG_GUI
             this.NumpadNine = new System.Windows.Forms.Button();
             this.NumpadClear = new System.Windows.Forms.Button();
             this.NumpadZero = new System.Windows.Forms.Button();
-            this.NumpadKA = new System.Windows.Forms.Button();
+            this.NumpadSend = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NumpadOne
@@ -153,22 +154,22 @@ namespace NGG_GUI
             this.NumpadZero.UseVisualStyleBackColor = true;
             this.NumpadZero.Click += new System.EventHandler(this.NumpadClick);
             // 
-            // NumpadKA
+            // NumpadSend
             // 
-            this.NumpadKA.Location = new System.Drawing.Point(117, 145);
-            this.NumpadKA.Name = "NumpadKA";
-            this.NumpadKA.Size = new System.Drawing.Size(40, 35);
-            this.NumpadKA.TabIndex = 11;
-            this.NumpadKA.Text = "Ka";
-            this.NumpadKA.UseVisualStyleBackColor = true;
-            this.NumpadKA.Click += new System.EventHandler(this.NumpadClick);
+            this.NumpadSend.Location = new System.Drawing.Point(117, 145);
+            this.NumpadSend.Name = "NumpadSend";
+            this.NumpadSend.Size = new System.Drawing.Size(40, 35);
+            this.NumpadSend.TabIndex = 11;
+            this.NumpadSend.Text = "Send";
+            this.NumpadSend.UseVisualStyleBackColor = true;
+            this.NumpadSend.Click += new System.EventHandler(this.NumpadClick);
             // 
             // numpad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(190, 207);
-            this.Controls.Add(this.NumpadKA);
+            this.Controls.Add(this.NumpadSend);
             this.Controls.Add(this.NumpadZero);
             this.Controls.Add(this.NumpadClear);
             this.Controls.Add(this.NumpadNine);
@@ -180,7 +181,8 @@ namespace NGG_GUI
             this.Controls.Add(this.NumpadThree);
             this.Controls.Add(this.NumpadTwo);
             this.Controls.Add(this.NumpadOne);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "numpad";
@@ -202,6 +204,6 @@ namespace NGG_GUI
         private System.Windows.Forms.Button NumpadNine;
         private System.Windows.Forms.Button NumpadClear;
         private System.Windows.Forms.Button NumpadZero;
-        private System.Windows.Forms.Button NumpadKA;
+        private System.Windows.Forms.Button NumpadSend;
     }
 }
