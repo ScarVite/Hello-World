@@ -19,6 +19,7 @@ namespace NGG_GUI
 
         public void compare(object sender, EventArgs e)
         {
+            // Implement a Setting for a tree diagramm with 1-10 and showing it with selection with removing Numbers & Keeping them. Drawing needed
             if (this.DifficultyBox.CheckedItems.Count > 1) MessageBox.Show("Please Select Only One Difficulty", "Many Exception");
             if (this.DifficultyBox.CheckedItems.Count == 0) MessageBox.Show("No Difficulty Selected, Game cannot be Started", "No Exception");
             else
