@@ -65,6 +65,12 @@
     </Compile>
     <Compile Include="main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeDiagramm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeDiagramm.Designer.cs">
+      <DependentUpon>TreeDiagramm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="gui.resx">
       <DependentUpon>gui.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +87,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TreeDiagramm.resx">
+      <DependentUpon>TreeDiagramm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
