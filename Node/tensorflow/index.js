@@ -14,7 +14,7 @@ const trainingData = tf.tensor2d(iris.map(flower => [
 ]))
 
 // Here We Tell it which is the correct answer for the Training Data
-// When the NN (Neural Networks) works: it trys to guess, which one of these 3 is correct, and with the output data it compares 
+// When the NN (Neural Networks) works: it trys to guess, which one of these 3 is correct, and with the output data it compares
 // and let's the best one "live" and trains further based on this answer
 const outputData = tf.tensor2d(iris.map(flower => [
     flower.species == "setosa" ? 1 : 0,
@@ -61,7 +61,8 @@ const startTime = Date.now();
 
 // We Train the Model here (explained in line: 17f.)
 model.fit(trainingData, outputData, { epochs: 100 }).then(history => {
-    console.log("Done", Date.now() - startTime);
+    //console.log(history)
+    console.log("Done", Date.now() - startTime + " ms");
     model.predict(testingData).print(); //Now we test the Model with it trying to predict the species of our testing data
     // The Nearer the Number to one, the more the NN thinks that this is the correct answer
 })
