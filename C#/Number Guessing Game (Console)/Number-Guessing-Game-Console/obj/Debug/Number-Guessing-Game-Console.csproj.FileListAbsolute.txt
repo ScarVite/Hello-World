@@ -20,3 +20,6 @@ D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Conso
 D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.application
 D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.exe
 D:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.pdb
+E:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Number-Guessing-Game-Console.csproj.AssemblyReference.cache
+E:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.exe
+E:\Code\Hello-World\C#\Number Guessing Game (Console)\Number-Guessing-Game-Console\obj\Debug\Test-CLI.pdb

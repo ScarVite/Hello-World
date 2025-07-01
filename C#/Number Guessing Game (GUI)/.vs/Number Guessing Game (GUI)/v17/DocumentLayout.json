@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|e:\\code\\hello-world\\c#\\number guessing game (gui)\\number guessing game (gui)\\numpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|solutionrelative:number guessing game (gui)\\numpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|e:\\code\\hello-world\\c#\\number guessing game (gui)\\number guessing game (gui)\\numpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|solutionrelative:number guessing game (gui)\\numpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|e:\\code\\hello-world\\c#\\number guessing game (gui)\\number guessing game (gui)\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|solutionrelative:number guessing game (gui)\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|e:\\code\\hello-world\\c#\\number guessing game (gui)\\number guessing game (gui)\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9FD3AC3-D777-4CB9-863F-D83382040B5F}|Number Guessing Game (GUI)\\Number Guessing Game (GUI).csproj|solutionrelative:number guessing game (gui)\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "numpad.cs",
+              "DocumentMoniker": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\numpad.cs",
+              "RelativeDocumentMoniker": "Number Guessing Game (GUI)\\numpad.cs",
+              "ToolTip": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\numpad.cs",
+              "RelativeToolTip": "Number Guessing Game (GUI)\\numpad.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T20:50:43.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "numpad.cs [Design]",
+              "DocumentMoniker": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\numpad.cs",
+              "RelativeDocumentMoniker": "Number Guessing Game (GUI)\\numpad.cs",
+              "ToolTip": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\numpad.cs [Design]",
+              "RelativeToolTip": "Number Guessing Game (GUI)\\numpad.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T20:50:42.069Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "gui.cs",
+              "DocumentMoniker": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\gui.cs",
+              "RelativeDocumentMoniker": "Number Guessing Game (GUI)\\gui.cs",
+              "ToolTip": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\gui.cs",
+              "RelativeToolTip": "Number Guessing Game (GUI)\\gui.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T20:50:25.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "gui.cs [Design]",
+              "DocumentMoniker": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\gui.cs",
+              "RelativeDocumentMoniker": "Number Guessing Game (GUI)\\gui.cs",
+              "ToolTip": "E:\\Code\\Hello-World\\C#\\Number Guessing Game (GUI)\\Number Guessing Game (GUI)\\gui.cs [Design]",
+              "RelativeToolTip": "Number Guessing Game (GUI)\\gui.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T20:50:14.584Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

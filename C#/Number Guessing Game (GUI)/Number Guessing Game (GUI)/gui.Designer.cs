@@ -77,6 +77,7 @@ namespace NGG_GUI
             this.LastNumLabel.Size = new System.Drawing.Size(75, 13);
             this.LastNumLabel.TabIndex = 3;
             this.LastNumLabel.Text = "Last Numbers:";
+            this.LastNumLabel.Click += new System.EventHandler(this.LastNumLabel_Click);
             // 
             // GuessLab
             // 

@@ -20,3 +20,15 @@ D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj
 D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.numpad.resources
 D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.Properties.Resources.resources
 D:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.TreeDiagramm.resources
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\bin\Debug\Number Guessing Game (GUI).exe.config
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\bin\Debug\Number Guessing Game (GUI).exe
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\bin\Debug\Number Guessing Game (GUI).pdb
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csproj.AssemblyReference.cache
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.gui.resources
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.numpad.resources
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.Properties.Resources.resources
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\NGG_GUI.TreeDiagramm.resources
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csproj.GenerateResource.cache
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).csproj.CoreCompileInputs.cache
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).exe
+E:\Code\Hello-World\C#\Number Guessing Game (GUI)\Number Guessing Game (GUI)\obj\Debug\Number Guessing Game (GUI).pdb

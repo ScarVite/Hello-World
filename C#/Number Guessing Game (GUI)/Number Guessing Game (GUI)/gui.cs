@@ -135,5 +135,10 @@ namespace NGG_GUI
             if (this.guess.Text.Length > 0) this.guess.Text = this.guess.Text.Remove(this.guess.Text.Length - 1);
             else this.AddText(null, null);
         }
+
+        private void LastNumLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
